@@ -1,4 +1,5 @@
 const { expressjwt: jwt } = require('express-jwt');
+const ErrorResponse = require('../utils/error');
 
 // Function used to extract the JWT token from the request's 'Authorization' Headers
 function getTokenFromHeaders(req) {
